@@ -1,0 +1,31 @@
+{{> lovedChamps}}
+{{> hatedChamps}}
+
+
+<input id="input-search"name="search"  value="{{search}}">
+<button id="button-search"type="submit" >search</button>
+<!-- Modal Add Product-->
+     
+
+{{!-- SELECTED ITEMS --}}
+
+<div id="table">
+    {{#each results}}
+     
+        <li>{{ customerName }}</li>
+    
+        {{/each}}
+   </div>
+  </ul>
+  <script id="template-products" type="text/handlebars">
+     \{{#each results}}
+  <ul>
+
+        <li>\{{ customerName }}</li>
+       
+    
+  </ul>
+    \{{/each}}
+  </script>
+  
+ 
